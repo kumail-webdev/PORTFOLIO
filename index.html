@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERSONAL PORTFOLIO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+        <nav>
+          <a class="logo" href="index.html"><span>K</span>umail.</a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>Hi, I'm <span>Kumail</span><br />Hashim From Pakistan</h1>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <img src="assets/user.jpg" />
+          </div>
+          <div class="col2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I am Kumail, an 18-year-old residing in Karachi. Currently, I am
+              pursuing a Bachelor's degree in Computer Science at Iqra
+              University. Alongside my studies, I have acquired skills in web
+              development. I am eager to expand my knowledge and contribute
+              positively to my education. My dedication and passion drive me
+              towards achieving success.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML / CSS / JS</span><br />Front-End Web Development
+                </li>
+                <li><span>REACT JS</span><br />Know how about React JS</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Intership</span><br />Intern At XYZ Technologies</li>
+                <li><span>Projects</span><br />E-commerce & Music Website</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2027</span><br />Bachlor's In Computer Science</li>
+                <li><span>2023</span><br />Completed My Intermediate</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+            <p>
+              I can create the basic structure of a webpage, including headings,
+              paragraphs, links, images, and more, forming the foundation for
+              building interactive and visually appealing websites.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+            <p>
+              Armed with CSS expertise, I can create visually stunning and
+              responsive interfaces, harmonizing typography, colors, and visual
+              effects to captivate and engage users effectively.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>JAVASCRIPT</h2>
+            <p>
+              JavaScript proficiency enables me to add interactivity and
+              functionality to web pages, such as dynamic content updates, form
+              validation, and user interaction features, elevating the user
+              experience and functionality of websites.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/work1.jpeg" alt="" />
+            <div class="layer">
+              <h3>E-Commerce Website</h3>
+              <p>
+                Experience the seamless synergy of innovation and user-centric
+                design on our website.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work2.jpg" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Experience the seamless synergy of innovation and user-centric
+                design on our website.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img class="img" src="assets/work3.jpeg" alt="" />
+            <div class="layer">
+              <h3>NFT Marketplace</h3>
+              <p>
+                Experience the seamless synergy of innovation and user-centric
+                design on our website.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="left-contact">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>mkhkhan2006@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>03203177121</p>
+            <div class="icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="assets/Muhammad Kumail Hashim.pdf" class="btn btn2" download>Download CV</a>
+          </div>
+          <div class="right-contact">
+            <form>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea rows="10" placeholder="Your Message"></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Kumail PK Inc. All rights reserved.</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
